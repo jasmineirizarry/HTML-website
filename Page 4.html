@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        body {
+            background: #ddd;
+            font-family: monospace;
+          }
+          .wrap{
+              position: relative;
+              margin: auto;
+              width:1000px;
+          }
+          .ribbon {
+            width: 900px;
+            height: 60px;
+            margin: 100px auto 0px;
+            position: relative;
+            background: maroon;
+          }
+          .nav{
+            position:relative;
+            margin-left: 0px;
+            margin-top: -50px;
+              text-align: center;
+              color: black
+          }
+          .nav a{
+              padding: 9px;
+              width:70px;
+              display:inline-flexbox;
+              font-size: 16px;
+              color: white     
+          }
+          .nav a:hover{
+              background: orange;
+              border-radius: 20px;
+          }
+          .ribbon i {
+            position: absolute;
+          }
+           
+          .ribbon i:first-child, .ribbon i:nth-child(2) {
+            position: absolute;
+            left: -20px;
+            bottom: -20px;
+            z-index: -1;
+            border: 20px solid transparent;
+            border-right-color: maroon;
+             
+          }
+           
+          .ribbon i:nth-child(2) {
+            left: auto;
+            right: -20px;
+            border-right-color: transparent;
+            border-left-color: maroon;
+          }
+           
+          .ribbon i:nth-child(3), .ribbon i:last-child {
+            width: 20px;
+            bottom: -20px;
+            left: -60px;
+            z-index: -2;
+            border: 30px solid maroon;
+            border-left-color: transparent;
+             
+          }
+           
+          .ribbon i:last-child {
+            bottom: -20px;
+            left: auto;
+            right: -60px;
+            border: 30px solid maroon;
+            border-right-color: transparent;
+           
+             
+          }
+          
+          * {
+            margin: 0;
+            padding: 0;
+          }
+          
+          .p1 {
+            font-family: "Times New Roman", Times, serif;
+            color: maroon;
+            background-color: burlywood;
+          }
+          
+          .p2 {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          .h1 {
+            color: maroon;
+          }
+          
+          .grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+                ". title title ."
+                ". header header ."
+                ". sidebar content ."
+                ". footer footer ."; 
+            grid-gap: 18px
+          }
+          
+          
+          
+          .title {
+            grid-area: title;
+            color: maroon;
+            justify-self: center;
+            padding: 0;
+            width: 80%;
+            min-width: 80%;
+            height: 80%;
+            min-height: 80%;
+          }
+          
+          .header {
+            grid-area: header;
+            color: maroon;
+            justify-self: center;
+            padding: 25px;
+            width: 40%;
+            min-width: 40%;
+            height: 15%;
+            min-height: 15%;
+            text-align: center;
+          }
+          
+          .sidebar {
+            grid-area: sidebar;
+            color: maroon;
+            justify-self: center;
+            background-color: burlywood;
+          }
+          
+          .content {
+            grid-area: content;
+            color: maroon;
+            background-color: burlywood;
+          }
+          .footer {
+            grid-area: footer;
+            color: maroon; 
+            
+            background-color: burlywood;
+            justify-self: center;
+          }
+    
+        </style>
+
+    <body>
+        
+        <div class="wrap">
+        <div class="ribbon">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+     </div>
+     <div class="nav">
+        <a href="Page 1.html"> Home </a> |  <a href="Page 2.html"> Crochet Life </a> |   <a href="Page 3.html"> Education Life </a> |  <a href="Page 4.html">Gaming and Streaming Life </a>
+  
+  </div>
+        
+        </div>
+
+    <body>
+    <div class="grid">
+        <div class="title">
+
+        </div>
+
+        <div class="header">
+          <h2> About Me! </h2>
+
+        </div>
+
+        <div class="sidebar"> 
+            <p> My full name</p>
+            <ul>
+                <il> Jasmine Marie Irizarry </il>
+            </ul>
+            <p> Pronouns </p>
+
+            <ul>
+                <il> She/Her/Hers/Ella </il>
+            </ul>
+
+
+            <p> Favorite Hobbies</p>
+            <ul>
+                <il> - Video Gaming (on PC) </il>
+            </ul>
+
+            <ul>  
+                <il> - Listening to music </il> 
+            </ul>
+
+            <ul>
+            <il> - Watching tv shows on hulu and netflix </il>
+            </ul>
+
+
+            <p> My Ethnicity </p>
+        
+            <ul>
+                <il> Puerto Rican</il>
+            </ul>
+
+            <img src="PuertoRico.jpg" width="320" height="215">
+
+
+        </div>
+
+        <div class="content">
+            <p class="p1">
+                I grew up on a lot of gaming systems. For example, the Nintendo Wii, Nintendo DS, and the Nintendo GameCube was a huge part of my childhood. I've always 
+                loved gaming especially playing Mario and Legends of Zelda games. I have always had love for videos games ever since as far back as I can remember. When 
+                I started college, I got into PC gaming, which was something I was not used to. The reason I ended up choosing Computer Science as my degree was because 
+                of the love of PC gaming I had developed. Originally I applied to National Louis University for Communications because at the time of applying to colleges, 
+                I had an interest for Journalism. Then I ended up changing my degree Freshman year to Pyschology, with the intensions of being a social worker because I love 
+                to help people out by talking to them. It wasnt until mid Sophomore year of college that I decided to change it to Computer Science. I ended up choosing CS 
+                because I realized I wouldnt be mentally happy with what I persued in Psychology. I also realized I had a desire for working in the technology field and was 
+                inspired by others around me seeing how amazing the Computer Science world is. I am huge on PC gaming. I have been gaming on PC for almost 3 years now. I 
+                started streaming in August of 2020 because I got inspired by other big streamers to try it out and to get out of my comfort zone. Even though I cant stream 
+                on a daily basis, I try to build content where I am available to do so. Ever since the pandemic started, I have gone back to being an introvert and it got 
+                really bad to where I would have nervous wrecks, break down, and not feel comfortable interacting with others. Being remote also limited my physical interactions 
+                with people and I wanted to find a way back to that.
+            
+            
+            
+              </p>
+        
+
+<p> 
+  <img src="streaming1.jpg" width="320" height="225">
+  <img src="streaming2.jpg" width="320" height="225">
+  <img src="streaming 4.jpg" width="320" height="225">
+  
+  <img src="streaming5.jpg" width="320" height="225">
+  <img src="streaming 6.jpg" width="320" height="225">
+  <img src="streaming7.jpg" width="320" height="225">
+
+</p>
+<p>
+
+  These are a few highlights from some of my streams within the last year 
+
+</p>
+
+
+
+
+
+
+        </div>
+
+        <div class="footer">
+            COPYRIGHTS (C) JASMINE M. IRIZARRY, ALL RIGHTS reserved
+        </div>
+      
+
+    </div>
+
+
+
+
+    </body>
+
+
+
+
+</html>

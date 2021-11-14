@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        body {
+            background: #ddd;
+            font-family: monospace;
+          }
+          .wrap{
+              position: relative;
+              margin: auto;
+              width:1000px;
+          }
+          .ribbon {
+            width: 900px;
+            height: 60px;
+            margin: 100px auto 0px;
+            position: relative;
+            background: maroon;
+          }
+          .nav{
+            position:relative;
+            margin-left: 0px;
+            margin-top: -50px;
+              text-align: center;
+              color: black
+          }
+          .nav a{
+              padding: 9px;
+              width:70px;
+              display:inline-flexbox;
+              font-size: 16px;
+              color: white     
+          }
+          .nav a:hover{
+              background: orange;
+              border-radius: 20px;
+          }
+          .ribbon i {
+            position: absolute;
+          }
+           
+          .ribbon i:first-child, .ribbon i:nth-child(2) {
+            position: absolute;
+            left: -20px;
+            bottom: -20px;
+            z-index: -1;
+            border: 20px solid transparent;
+            border-right-color: maroon;
+             
+          }
+           
+          .ribbon i:nth-child(2) {
+            left: auto;
+            right: -20px;
+            border-right-color: transparent;
+            border-left-color: maroon;
+          }
+           
+          .ribbon i:nth-child(3), .ribbon i:last-child {
+            width: 20px;
+            bottom: -20px;
+            left: -60px;
+            z-index: -2;
+            border: 30px solid maroon;
+            border-left-color: transparent;
+             
+          }
+           
+          .ribbon i:last-child {
+            bottom: -20px;
+            left: auto;
+            right: -60px;
+            border: 30px solid maroon;
+            border-right-color: transparent;
+           
+             
+          }
+          
+          * {
+            margin: 0;
+            padding: 0;
+          }
+          
+          .p1 {
+            font-family: "Times New Roman", Times, serif;
+            color: maroon;
+            background-color: burlywood;
+          }
+          
+          .p2 {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          .h1 {
+            color: maroon;
+          }
+          
+          .grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+                ". title title ."
+                ". header header ."
+                ". sidebar content ."
+                ". footer footer ."; 
+            grid-gap: 18px
+          }
+          
+          
+          
+          .title {
+            grid-area: title;
+            color: maroon;
+            justify-self: center;
+            padding: 0;
+            width: 80%;
+            min-width: 80%;
+            height: 80%;
+            min-height: 80%;
+          }
+          
+          .header {
+            grid-area: header;
+            color: maroon;
+            justify-self: center;
+            padding: 25px;
+            width: 40%;
+            min-width: 40%;
+            height: 15%;
+            min-height: 15%;
+            text-align: center;
+          }
+          
+          .sidebar {
+            grid-area: sidebar;
+            color: maroon;
+            justify-self: center;
+            background-color: burlywood;
+          }
+          
+          .content {
+            grid-area: content;
+            color: maroon;
+            background-color: burlywood;
+          }
+          .footer {
+            grid-area: footer;
+            color: maroon; 
+            
+            background-color: burlywood;
+            justify-self: center;
+          }
+    
+        </style>
+
+    <body>
+        
+        <div class="wrap">
+        <div class="ribbon">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+     </div>
+     <div class="nav">
+        <a href="Page 1.html"> Home </a> |  <a href="Page 2.html"> Crochet Life </a> |   <a href="Page 3.html"> Education Life </a> |  <a href="Page 4.html">Gaming and Streaming Life </a>
+  
+  </div>
+        
+        </div>
+
+    <body>
+    <div class="grid">
+        <div class="title">
+
+        </div>
+
+        <div class="header">
+          <h2> About Me! </h2>
+
+        </div>
+
+        <div class="sidebar"> 
+            <p> My full name</p>
+            <ul>
+                <il> Jasmine Marie Irizarry </il>
+            </ul>
+            <p> Pronouns </p>
+
+            <ul>
+                <il> She/Her/Hers/Ella </il>
+            </ul>
+
+
+            <p> Favorite Hobbies</p>
+            <ul>
+                <il> - Video Gaming (on PC) </il>
+            </ul>
+
+            <ul>  
+                <il> - Listening to music </il> 
+            </ul>
+
+            <ul>
+            <il> - Watching tv shows on hulu and netflix </il>
+            </ul>
+
+
+            <p> My Ethnicity </p>
+        
+            <ul>
+                <il> Puerto Rican</il>
+            </ul>
+
+            <img src="PuertoRico.jpg" width="320" height="215">
+
+
+        </div>
+
+        <div class="content">
+            <p class="p1">
+                My name is Jasmine Irizarry. I am born and raised from Chicago Illinois on the north side. I am 21 years old and I am the middle child of 3 girls and 
+                also have a 9 year old brother in Puerto Rico. I love cats and dogs and love my purple hair. I recently had my hair a blue and greenish color but wasnt 
+                feeling it. I also love Puerto Rican and Mexican food. My favorite food is Deep Dish Pizza OR any kind of pizza (yes including 4 Hawaiian Pizza LOL)I have 
+                been in a happy relationship with my amazing boyfriend for the last 7 1/2 years. Since 2014, he has been such a huge part of my life, even through the bad. 
+                I am a Computer Science and Information Systems major at National Louis University and my Concentration is Data Analytics. I am 100% Puerto Rican. I am going 
+                to be a first generation to graduate from a 4 year college. I have many hobbies that not a lot of people know about. I have been crocheting for about 5 years 
+                now. I have been streaming for a little over a year and I love PC gaming. I have had trouble making friends throughout high school and college because I am an 
+                introvert and have a super quiet side. I remember getting super nervous doing ice breakers. At my mom's house, there are three cats and two dogs. My mom has 
+                rescued all except one of the dogs from an organization through her vet carrer. Pets have also gotten me through many things I do consider pets to be a sort of 
+                therapy. My favorite breed of dogs are corgis, australian shepherds, black/chocolate Labs, and golden retrievers. I also love mancoon cats. (The cats at my moms 
+                house are mancoon breed except one)
+            </p>
+        
+<img src="Pizza.jpg" width="360" height="215">
+<img src="Cats.jpg" width="360" height="215">
+<img src="dog 1.jpg" width="260" height="215">
+
+
+
+        </div>
+
+        <div class="footer">
+            COPYRIGHTS (C) JASMINE M. IRIZARRY, ALL RIGHTS reserved
+        </div>
+      
+
+    </div>
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

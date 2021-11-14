@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        body {
+            background: #ddd;
+            font-family: monospace;
+          }
+          .wrap{
+              position: relative;
+              margin: auto;
+              width:1000px;
+          }
+          .ribbon {
+            width: 900px;
+            height: 60px;
+            margin: 100px auto 0px;
+            position: relative;
+            background: maroon;
+          }
+          .nav{
+            position:relative;
+            margin-left: 0px;
+            margin-top: -50px;
+              text-align: center;
+              color: black
+          }
+          .nav a{
+              padding: 9px;
+              width:70px;
+              display:inline-flexbox;
+              font-size: 16px;
+              color: white     
+          }
+          .nav a:hover{
+              background: orange;
+              border-radius: 20px;
+          }
+          .ribbon i {
+            position: absolute;
+          }
+           
+          .ribbon i:first-child, .ribbon i:nth-child(2) {
+            position: absolute;
+            left: -20px;
+            bottom: -20px;
+            z-index: -1;
+            border: 20px solid transparent;
+            border-right-color: maroon;
+             
+          }
+           
+          .ribbon i:nth-child(2) {
+            left: auto;
+            right: -20px;
+            border-right-color: transparent;
+            border-left-color: maroon;
+          }
+           
+          .ribbon i:nth-child(3), .ribbon i:last-child {
+            width: 20px;
+            bottom: -20px;
+            left: -60px;
+            z-index: -2;
+            border: 30px solid maroon;
+            border-left-color: transparent;
+             
+          }
+           
+          .ribbon i:last-child {
+            bottom: -20px;
+            left: auto;
+            right: -60px;
+            border: 30px solid maroon;
+            border-right-color: transparent;
+           
+             
+          }
+          
+          * {
+            margin: 0;
+            padding: 0;
+          }
+          
+          .p1 {
+            font-family: "Times New Roman", Times, serif;
+            color: maroon;
+            background-color: burlywood;
+          }
+          
+          .p2 {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          .h1 {
+            color: maroon;
+          }
+          
+          .grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+                ". title title ."
+                ". header header ."
+                ". sidebar content ."
+                ". footer footer ."; 
+            grid-gap: 18px
+          }
+          
+          
+          
+          .title {
+            grid-area: title;
+            color: maroon;
+            justify-self: center;
+            padding: 0;
+            width: 80%;
+            min-width: 80%;
+            height: 80%;
+            min-height: 80%;
+          }
+          
+          .header {
+            grid-area: header;
+            color: maroon;
+            justify-self: center;
+            padding: 25px;
+            width: 40%;
+            min-width: 40%;
+            height: 15%;
+            min-height: 15%;
+            text-align: center;
+          }
+          
+          .sidebar {
+            grid-area: sidebar;
+            color: maroon;
+            justify-self: center;
+            background-color: burlywood;
+          }
+          
+          .content {
+            grid-area: content;
+            color: maroon;
+            background-color: burlywood;
+          }
+          .footer {
+            grid-area: footer;
+            color: maroon; 
+            
+            background-color: burlywood;
+            justify-self: center;
+          }
+    
+        </style>
+
+    <body>
+        
+        <div class="wrap">
+        <div class="ribbon">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+     </div>
+     <div class="nav">
+        <a href="Page 1.html"> Home </a> |  <a href="Page 2.html"> Crochet Life </a> |   <a href="Page 3.html"> Education Life </a> |  <a href="Page 4.html">Gaming and Streaming Life </a>
+  
+  </div>
+        
+        </div>
+
+    <body>
+    <div class="grid">
+        <div class="title">
+
+        </div>
+
+        <div class="header">
+          <h2> About Me! </h2>
+
+        </div>
+
+        <div class="sidebar"> 
+            <p> My full name</p>
+            <ul>
+                <il> Jasmine Marie Irizarry </il>
+            </ul>
+            <p> Pronouns </p>
+
+            <ul>
+                <il> She/Her/Hers/Ella </il>
+            </ul>
+
+
+            <p> Favorite Hobbies</p>
+            <ul>
+                <il> - Video Gaming (on PC) </il>
+            </ul>
+
+            <ul>  
+                <il> - Listening to music </il> 
+            </ul>
+
+            <ul>
+            <il> - Watching tv shows on hulu and netflix </il>
+            </ul>
+
+
+            <p> My Ethnicity </p>
+        
+            <ul>
+                <il> Puerto Rican</il>
+            </ul>
+
+            <img src="PuertoRico.jpg" width="320" height="215">
+
+
+        </div>
+
+        <div class="content">
+            <p class="p1">
+
+                I have been crocheting since the summer before my junior year of high school. I discovered crochet because I was curious about a ball of yarn I found at a relatives
+                work place. My younger sister at the time showed me some stitches, but I never continued it or cared. After that summer, I actually started gaining an interest 
+                in crochet because I went through some stuff during my junior year of high school and it was one of the most stressful years of my high school life. I used it as a 
+                coping mechanism and my therapist/social worker at the time, told me that it was a form of meditation to use during rough times. I ended up picking it up and it became 
+                a part of my daily life. After high school, I decided to create a small business because by this time, I have already had some commission orders. Then, I started 
+                creating social media accounts for my small business. I have done so many commision orders for friends and family and have built a social media portfolio on what I could 
+                make. Another thing that is amazing about the Yarn Arts world is that during the Pandemic, crochet became super popular as many of us were in lock-down for awhile. It was 
+                so amazing to start to see a lot of Yarn Artist blow up on tiktok. There were so many trends that became popular in the yarn world, such as crochet summer tops and even the 
+                Harry Styles Patch work cardigan. Unfortunetly, I have not made one yet. But during this time I picked up knitting. I always looked at knitting as such a difficult task and 
+                if you drop a stitch your work messes up. I never had the patience until I realized how much more relaxing knitting is compared to 
+                crocheting.
+
+
+            </p>
+        
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0iWcNqufkqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p> This video talks about the many reasons why someone loves crochet. I know I do. </p>
+
+
+
+
+        </div>
+
+        <div class="footer">
+            COPYRIGHTS (C) JASMINE M. IRIZARRY, ALL RIGHTS reserved
+        </div>
+      
+
+    </div>
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

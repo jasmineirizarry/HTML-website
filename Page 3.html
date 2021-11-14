@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html>
+    <style>
+        body {
+            background: #ddd;
+            font-family: monospace;
+          }
+          .wrap{
+              position: relative;
+              margin: auto;
+              width:1000px;
+          }
+          .ribbon {
+            width: 900px;
+            height: 60px;
+            margin: 100px auto 0px;
+            position: relative;
+            background: maroon;
+          }
+          .nav{
+            position:relative;
+            margin-left: 0px;
+            margin-top: -50px;
+              text-align: center;
+              color: black
+          }
+          .nav a{
+              padding: 9px;
+              width:70px;
+              display:inline-flexbox;
+              font-size: 16px;
+              color: white     
+          }
+          .nav a:hover{
+              background: orange;
+              border-radius: 20px;
+          }
+          .ribbon i {
+            position: absolute;
+          }
+           
+          .ribbon i:first-child, .ribbon i:nth-child(2) {
+            position: absolute;
+            left: -20px;
+            bottom: -20px;
+            z-index: -1;
+            border: 20px solid transparent;
+            border-right-color: maroon;
+             
+          }
+           
+          .ribbon i:nth-child(2) {
+            left: auto;
+            right: -20px;
+            border-right-color: transparent;
+            border-left-color: maroon;
+          }
+           
+          .ribbon i:nth-child(3), .ribbon i:last-child {
+            width: 20px;
+            bottom: -20px;
+            left: -60px;
+            z-index: -2;
+            border: 30px solid maroon;
+            border-left-color: transparent;
+             
+          }
+           
+          .ribbon i:last-child {
+            bottom: -20px;
+            left: auto;
+            right: -60px;
+            border: 30px solid maroon;
+            border-right-color: transparent;
+           
+             
+          }
+          
+          * {
+            margin: 0;
+            padding: 0;
+          }
+          
+          .p1 {
+            font-family: "Times New Roman", Times, serif;
+            color: maroon;
+            background-color: burlywood;
+          }
+          
+          .p2 {
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          .h1 {
+            color: maroon;
+          }
+          
+          .grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            grid-template-areas:
+                ". title title ."
+                ". header header ."
+                ". sidebar content ."
+                ". footer footer ."; 
+            grid-gap: 18px
+          }
+          
+          
+          
+          .title {
+            grid-area: title;
+            color: maroon;
+            justify-self: center;
+            padding: 0;
+            width: 80%;
+            min-width: 80%;
+            height: 80%;
+            min-height: 80%;
+          }
+          
+          .header {
+            grid-area: header;
+            color: maroon;
+            justify-self: center;
+            padding: 25px;
+            width: 40%;
+            min-width: 40%;
+            height: 15%;
+            min-height: 15%;
+            text-align: center;
+          }
+          
+          .sidebar {
+            grid-area: sidebar;
+            color: maroon;
+            justify-self: center;
+            background-color: burlywood;
+          }
+          
+          .content {
+            grid-area: content;
+            color: maroon;
+            background-color: burlywood;
+          }
+          .footer {
+            grid-area: footer;
+            color: maroon; 
+            
+            background-color: burlywood;
+            justify-self: center;
+          }
+    
+        </style>
+
+    <body>
+        
+        <div class="wrap">
+        <div class="ribbon">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+     </div>
+     <div class="nav">
+        <a href="Page 1.html"> Home </a> |  <a href="Page 2.html"> Crochet Life </a> |   <a href="Page 3.html"> Education Life </a> |  <a href="Page 4.html">Gaming and Streaming Life </a>
+  
+  </div>
+        
+        </div>
+
+    <body>
+    <div class="grid">
+        <div class="title">
+
+        </div>
+
+        <div class="header">
+          <h2> About Me! </h2>
+
+        </div>
+
+        <div class="sidebar"> 
+            <p> My full name</p>
+            <ul>
+                <il> Jasmine Marie Irizarry </il>
+            </ul>
+            <p> Pronouns </p>
+
+            <ul>
+                <il> She/Her/Hers/Ella </il>
+            </ul>
+
+
+            <p> Favorite Hobbies</p>
+            <ul>
+                <il> - Video Gaming (on PC) </il>
+            </ul>
+
+            <ul>  
+                <il> - Listening to music </il> 
+            </ul>
+
+            <ul>
+            <il> - Watching tv shows on hulu and netflix </il>
+            </ul>
+
+
+            <p> My Ethnicity </p>
+        
+            <ul>
+                <il> Puerto Rican</il>
+            </ul>
+
+            <img src="PuertoRico.jpg" width="320" height="215">
+
+
+        </div>
+
+        <div class="content">
+            <p class="p1">
+
+    During my high school life, I have accomplished many things. First off my second year of high school, I transferred to a school in Puerto Rico and I developed my second language     
+    of spanish. I overcame a lot of challenges. For example, during my time in puerto rico, the language barrier was also a challenge for me. Before going to puerto rico, I did not              
+    speak one ounce of spanish. I struggled a lot to make friends and pass my classes. Another challenge I ran into was having to go to summer school for failing one of my classes.       
+    It was one of the last things I did in my time in Puerto Rico. After this year, I left Puerto Rico and came back to chicago. There were many issues trying to get back into a CPS        
+    high school because my credits werent alligning with the grade level I was supposed to be in. I had to get my credits translated at the CPS headquarters building in downtown and      
+    I missed my first week of my junior year of highschool. Junior year was a difficult year but none the less, I passed. I changed high schools my senior year of high school. When I made     
+    the transfer to my last high school, it probably changed my life. I made amazing friends that I still talk to today, I was able to be at peace, and I moved out of my moms house and started    
+    my adult life. I was able to graduate high school with my diploma and it was a great feeling.
+
+    </p>
+        
+<img src="prschooluniform.jpg" width="250" height="300"> <img src="hsgrad.jpg" width="250" height="300"> <img src="School.png" width="250" height="300">
+
+
+        </div>
+
+        <div class="footer">
+            COPYRIGHTS (C) JASMINE M. IRIZARRY, ALL RIGHTS reserved
+        </div>
+      
+
+    </div>
+
+
+
+
+    </body>
+
+
+
+
+</html>
